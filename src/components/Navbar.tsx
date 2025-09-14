@@ -21,9 +21,9 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <div className="text-lg font-bold bg-gradient-stellar bg-clip-text text-transparent">
+        <a href="/" className="text-lg font-bold bg-gradient-stellar bg-clip-text text-transparent">
           Astrodata Camp
-        </div>
+        </a>
         <nav className="hidden md:flex items-center space-x-6">
           <a href="/" className="text-foreground/80 hover:text-foreground transition-colors">Home</a>
           <a href="/about" className="text-foreground/80 hover:text-foreground transition-colors">About</a>
