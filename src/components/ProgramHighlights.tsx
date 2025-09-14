@@ -35,7 +35,7 @@ const highlights = [
 
 export function ProgramHighlights() {
   return (
-    <section className="py-20 px-6 relative">
+    <section id="program-highlights" className="py-20 px-6 relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-stellar bg-clip-text text-transparent">

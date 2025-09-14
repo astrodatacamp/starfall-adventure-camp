@@ -35,7 +35,7 @@ export function WaitlistSection() {
   };
 
   return (
-    <section className="py-20 px-6 relative overflow-hidden">
+    <section id="waitlist-section" className="py-20 px-6 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-nebula opacity-20" />
       
@@ -75,6 +75,9 @@ export function WaitlistSection() {
 
           <p className="text-sm text-muted-foreground mt-6">
             Limited spots available • No spam, we promise
+          </p>
+          <p className="text-sm text-muted-foreground mt-2">
+            By joining, you'll be invited to a live Q&A about the camp.
           </p>
         </div>
       </div>

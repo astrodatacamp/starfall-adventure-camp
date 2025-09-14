@@ -37,7 +37,7 @@ export function Hero() {
       <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-stellar bg-clip-text text-transparent">
-            Stellar Horizons
+            Astrodata Camp
           </h1>
           <p className="text-xl md:text-2xl mb-4 text-foreground/90">
             Astronomy Summer Camp
@@ -48,11 +48,27 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <Button size="lg" variant="stellar" className="text-lg px-8 py-6">
+            <Button
+              size="lg"
+              variant="stellar"
+              className="text-lg px-8 py-6"
+              onClick={() => {
+                const section = document.getElementById("waitlist-section");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               <Telescope className="mr-2" />
               Join the Waitlist
             </Button>
-            <Button size="lg" variant="cosmic" className="text-lg px-8 py-6">
+            <Button
+              size="lg"
+              variant="cosmic"
+              className="text-lg px-8 py-6"
+              onClick={() => {
+                const section = document.getElementById("program-highlights");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               <Calendar className="mr-2" />
               Learn More
             </Button>

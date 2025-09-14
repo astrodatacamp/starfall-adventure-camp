@@ -16,8 +16,8 @@ const details = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Dark Sky Reserve",
-    description: "Pristine observation conditions",
+    value: "To be Announced",
+    description: "Location will be announced a few weeks before applications open",
   },
   {
     icon: Clock,

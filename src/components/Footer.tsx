@@ -8,12 +8,12 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <Telescope className="w-6 h-6 text-primary" />
             <span className="text-lg font-semibold bg-gradient-stellar bg-clip-text text-transparent">
-              Stellar Horizons
+              Astrodata Camp
             </span>
           </div>
           
           <p className="text-sm text-muted-foreground text-center">
-            © 2025 Stellar Horizons Astronomy Camp. Reach for the stars.
+            © 2025 Astrodata Camp. Reach for the stars.
           </p>
         </div>
       </div>
