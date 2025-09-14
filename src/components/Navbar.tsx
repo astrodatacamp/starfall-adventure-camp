@@ -25,7 +25,8 @@ export function Navbar() {
           Astrodata Camp
         </div>
         <nav className="hidden md:flex items-center space-x-6">
-          {/* Add other nav links here if needed */}
+          <a href="/" className="text-foreground/80 hover:text-foreground transition-colors">Home</a>
+          <a href="/about" className="text-foreground/80 hover:text-foreground transition-colors">About</a>
         </nav>
         <Button
           variant="stellar"
