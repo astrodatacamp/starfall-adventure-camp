@@ -6,35 +6,35 @@
 All colors MUST be HSL.
 */
 
-@layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cosmic color palette */
+    --background: 222 84% 4%; /* Deep space blue */
+    --foreground: 210 40% 98%; /* Starlight white */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 226 71% 8%; /* Darker cosmic card */
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 226 71% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 259 89% 61%; /* Nebula purple */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 221 83% 15%; /* Deep space secondary */
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 28 100% 64%; /* Star orange accent */
+    --accent-foreground: 222 47% 11%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 259 89% 61%;
 
     --radius: 0.5rem;
 
@@ -53,6 +53,19 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Custom gradients and effects */
+    --gradient-nebula: linear-gradient(135deg, hsl(259 89% 61%), hsl(221 83% 15%), hsl(222 84% 4%));
+    --gradient-aurora: linear-gradient(180deg, hsl(259 89% 61% / 0.2), hsl(28 100% 64% / 0.1), transparent);
+    --gradient-stellar: linear-gradient(135deg, hsl(28 100% 64%), hsl(259 89% 61%));
+    --gradient-cosmic: radial-gradient(circle at top, hsl(221 83% 15%), hsl(222 84% 4%));
+    
+    /* Shadows and glows */
+    --shadow-glow: 0 0 40px hsl(259 89% 61% / 0.3);
+    --shadow-stellar: 0 10px 60px -10px hsl(259 89% 61% / 0.5);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {

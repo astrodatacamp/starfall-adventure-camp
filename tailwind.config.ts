@@ -64,6 +64,18 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        twinkle: {
+          "0%, 100%": { opacity: "0" },
+          "50%": { opacity: "1" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -82,8 +94,17 @@ export default {
         },
       },
       animation: {
+        float: "float 3s ease-in-out infinite",
+        twinkle: "twinkle 2s ease-in-out infinite",
+        "fade-in": "fade-in 0.6s ease-out",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      backgroundImage: {
+        "gradient-nebula": "var(--gradient-nebula)",
+        "gradient-aurora": "var(--gradient-aurora)",
+        "gradient-stellar": "var(--gradient-stellar)",
+        "gradient-cosmic": "var(--gradient-cosmic)",
       },
     },
   },
